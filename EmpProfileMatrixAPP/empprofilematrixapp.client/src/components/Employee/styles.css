@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Very Light Blue */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: max-content; /* Ensure body takes full height */
+}
+
+/* Container and layout */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e0f7fa; /* Lighter Blue Shade */
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensures padding does not overflow */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    margin-top: 0; /* No extra margin, since body padding-top is already set */
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    color: darkslateblue; /* Medium Teal Blue */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Employee Card */
+.employee-card, .employee-form {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensure the form takes full width of its parent */
+    box-sizing: border-box; /* Prevent overflow */
+    overflow-y: auto; /* Make form scrollable if content exceeds */
+}
+
+/* Error and Loading Messages */
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Employee Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 8px;
+}
+
+    .table th, .table td {
+        padding: 12px 15px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Table Header */
+    .table th {
+        background-color: darkslateblue; /* Medium Teal Blue */
+        color: white;
+    }
+
+    /* Table striped effect */
+    .table-striped tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    /* Table hover effect */
+    .table tbody tr:hover {
+        background-color: #e0f7fa; /* Light hover effect */
+        cursor: pointer;
+    }
+
+    /* Table Border Styles */
+    .table-bordered {
+        border: 1px solid #dee2e6;
+    }
+
+    .table-bordered th, .table-bordered td {
+        border: 1px solid #dee2e6;
+    }
+
+/* Label Styles */
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: darkslateblue;
+}
+
+/* Button Styles */
+.btn-sm {
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: whitesmoke;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+    .btn-sm:hover {
+        transform: translateY(-2px);
+        background-color: #00796b;
+        color: white;
+    }
+
+.btn-primary {
+    background-color: darkslateblue;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: darkblue;
+        color: white
+    }
+
+/* Warning Button */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+    .btn-warning:hover {
+        background-color: #ffb300;
+    }
+
+/* Danger Button */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+/* Form-specific adjustments */
+.employee-form {
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Adjust spacing on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .employee-form {
+        max-height: 80vh; /* Set max height for small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce header size on small screens */
+    }
+
+    .btn-sm {
+        width: 100%; /* Make buttons full-width on smaller screens */
+    }
+}
+
+/* Form Field Styles */
+.form-group {
+    margin-bottom: 15px;
+}

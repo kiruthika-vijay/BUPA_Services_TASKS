@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EmpProfileMatrixAPP.Server.props" />
+</Project>

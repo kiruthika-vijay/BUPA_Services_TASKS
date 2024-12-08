@@ -1,0 +1,6 @@
+@EmpProfileMatrixAPP.Server_HostAddress = http://localhost:5189
+
+GET {{EmpProfileMatrixAPP.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
